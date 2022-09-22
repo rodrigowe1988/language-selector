@@ -1,0 +1,8 @@
+<button mat-button [matMenuTriggerFor]="menu">Idioma</button>
+<mat-menu #menu="matMenu">
+  <button (click)="portuguese()" mat-menu-item><img src="assets/imgs/brasil.ico" alt="bandeira do brasil">Português</button>
+  <button (click)="spanish()" mat-menu-item><img src="assets/imgs/espanha.ico" alt="bandeira da Espanha">Español</button>
+</mat-menu>
+
+<h2>{{language}}</h2>
+
